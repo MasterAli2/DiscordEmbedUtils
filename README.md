@@ -24,8 +24,6 @@ This was mostly inspired by [Doom In Discord](https://doom.p2r3.com/)
 
 Note: Make sure the domain does not contain the appending suffix (default is 'z')
 
-## How To
-
 ## Games:
 ### Chess:
 1. Send `https://[domain]/games/chess/z` in discord
