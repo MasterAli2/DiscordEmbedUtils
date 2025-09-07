@@ -40,6 +40,6 @@ Note: Make sure the domain does not contain the appending suffix (default is 'z'
 2. Play by typing `s/z/[move]z` (ex: `s/z/2z`) (number)
 
 ### Mine Sweeper:
-1. Send `https://[domain]/ms/ms/z` in discord
+1. Send `https://[domain]/games/ms/z` in discord
 2. Play by typing `s/z/[move]z` (ex: `s/z/2z`) (number)
 
