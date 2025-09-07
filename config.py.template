@@ -1,0 +1,19 @@
+from __future__ import annotations
+
+import os
+import subprocess
+
+
+CACH_CONFIG = {
+    "CACHE_TYPE": "SimpleCache",
+    "CACHE_DEFAULT_TIMEOUT": 60,
+}
+
+FONT_PATH = "/usr/share/fonts/truetype/ubuntu/Ubuntu-R.ttf"
+STOCKFISH_PATH_DEFAULT = "/usr/games/stockfish"
+
+sf = subprocess.run(["which", "stockfish"], capture_output=True, text=True)
+STOCKFISH_PATH = sf.stdout.strip() if sf.stdout.strip() else STOCKFISH_PATH_DEFAULT
+
+APPENDING_SUFFIX = 'z'
+
