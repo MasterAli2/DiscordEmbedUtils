@@ -8,6 +8,11 @@ This was mostly inspired by [Doom In Discord](https://doom.p2r3.com/)
 
 - Play chess, tiktaktoe, connect 4 or minesweeper within discord
 
+## Hosted Instance
+
+Currently I have setup an instance of this with a free python anywhere plan hosted at `https://masterali2.pythonanywhere.com/`
+I might have to disable this in the future
+
 ## Requirements
 
 - Python 3.10+
