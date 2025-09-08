@@ -17,3 +17,4 @@ STOCKFISH_PATH = sf.stdout.strip() if sf.stdout.strip() else STOCKFISH_PATH_DEFA
 
 APPENDING_SUFFIX = 'z'
 
+DEBUG = True
