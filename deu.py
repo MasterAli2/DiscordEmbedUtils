@@ -2,7 +2,7 @@ from flask import Flask, send_file, request
 from flask_caching import Cache
 import io
 
-from games.chess_game import fen_to_png, getNextState
+#from games.chess_game import fen_to_png, getNextState
 from games.tiktaktoe_game import getBoard, drawTikTakToe
 from games.connect4_game import drawConnectFour, playConnectFour
 from games.minesweeper_game import drawMS, playMineSweeper
@@ -22,14 +22,17 @@ cache = Cache(app)
 def games(game: str, san: str):
     if san.endswith(config.APPENDING_SUFFIX):
         san = san.removesuffix(config.APPENDING_SUFFIX)
-
+        
+    """
     if game == "chess":
         moves = san.split('.')
         fen = getNextState(moves)
         file = fen_to_png(fen)
         buffer = io.BytesIO(file)
         buffer.seek(0)
-    elif game == "four":
+    el
+    """
+    if game == "four":
         moves = list(san)
         fen = playConnectFour(moves)
         buffer = drawConnectFour(fen)
