@@ -24,7 +24,7 @@ def playMineSweeper(moves):
         
         if (board[i[0]-1][i[1]-1]).endswith("+"):
             print("Illegal move")
-            break
+            continue
         
         past.append(i)
         
